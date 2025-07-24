@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.nav-color{
+    color: rgba(137, 135, 161, 1);
+}
+ .nav-bar,.banner-parent{ 
+     max-width: 1440px;
+    margin: 0 auto; 
+ } 
+.color-1{
+    color: rgba(0, 0, 0, 0.5);
+}
+/* nav styles */
+.nav-bar{
+    justify-content: space-between;
+}
+.nav-li{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.kalo{
+    color:rgba(0, 0, 0, 1) 
+}
+/* banner style */
+.banner-parent{
+margin-top: 226px;
+padding: 0 150px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(233, 90, 8, 1);
+    
+}
+.banner-des{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 13px;
+}
+
+/* responsive for small device */
+@media screen and (max-width:576px){
+    .nav-link{
+        display: none;
+    }
+    .banner-parent{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+      
+    .banner-pic{
+        width: 100%;
+    }
+    .banner-des{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0px;
+    text-align: justify;
+}
+}
