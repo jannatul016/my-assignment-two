@@ -15,8 +15,8 @@
 .nav-color{
     color: rgba(137, 135, 161, 1);
 }
- .nav-bar,.banner-parent{ 
-     max-width: 1440px;
+ .nav-bar,.banner-parent , .card-section{ 
+     max-width: 1140px;
     margin: 0 auto; 
  } 
 .color-1{
@@ -25,6 +25,7 @@
 /* nav styles */
 .nav-bar{
     justify-content: space-between;
+    align-items: center;
 }
 .nav-li{
     list-style: none;
@@ -35,13 +36,13 @@
     font-weight: 500;
     font-size: 1rem;
 }
-.kalo{
+.black{
     color:rgba(0, 0, 0, 1) 
 }
 /* banner style */
 .banner-parent{
-margin-top: 226px;
-padding: 0 150px;
+ margin-top: 226px; 
+ padding: 0 150px;
 }
 .banner-title{
     font-size: 4rem;
@@ -56,6 +57,51 @@ padding: 0 150px;
     padding: 13px;
 }
 
+/* our-plants */
+.plant-content{
+    margin-top: 150px;
+}
+.plant-title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color:rgba(233, 90, 8, 1) ;
+}
+.plant-des{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.card-section , .card-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    width: 1140px; 
+    height: 1000;
+}
+.card-content{
+    margin: 20px;
+    gap: 20px;
+}
+.card-title{
+    font-size: 1.25rem;
+    text-align: center;
+    ;
+}
+.card-des{
+font-weight: bold;
+font-size: 1.25rem;
+text-align: center;
+margin-top: 20px;
+}
+ .card-btn{
+    background-color: rgba(233, 90, 8, 1);
+    width: 270px;
+    height: 50px;
+    color: white;
+    border: none;
+}
+
+
 /* responsive for small device */
 @media screen and (max-width:576px){
     .nav-link{
@@ -63,16 +109,39 @@ padding: 0 150px;
     }
     .banner-parent{
         flex-direction: column-reverse;
-        margin-top: 50px;
-    }
-      
+        margin-left: 0px;
+        margin-top: 26px;
+        gap: 100px;
+     }
     .banner-pic{
         width: 100%;
     }
-    .banner-des{
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 0px;
-    text-align: justify;
-}
-}
+    .banner{
+        width: 361px;
+        height: 147px;
+        margin-top: 26px;
+        gap: 13px;
+    }
+    .banner-title{
+        font-size: 1.25rem; 
+        margin: 0px;
+        width: 200px;
+        height: 40px;
+    }
+    .banner-parent{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .card-section , .card-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 50px;
+    width: 1140px; 
+    height: 1000;
+    }
+    
+}   
+
+
