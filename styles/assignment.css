@@ -15,7 +15,7 @@
 .nav-color{
     color: rgba(137, 135, 161, 1);
 }
- .nav-bar,.banner-parent , .card-section{ 
+ .nav-bar,.banner-parent , .card-section , .badge-parent{ 
      max-width: 1140px;
     margin: 0 auto; 
  } 
@@ -101,6 +101,31 @@ margin-top: 20px;
     border: none;
 }
 
+/* badge styles */
+.badge-pic{
+    width: 286px;
+    height: 286px;
+    margin-left: -200px;
+    margin-top: -150px;
+    
+}
+.badge-parent{
+    display: flex;
+    margin-top: 210px;
+    gap: 60px;
+}
+.badge-des{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 150px 0px 0px 0px;
+}
+.badge-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(9, 4, 0);  
+}
+
 
 /* responsive for small device */
 @media screen and (max-width:576px){
@@ -134,14 +159,31 @@ margin-top: 20px;
         margin: 0 auto;
         padding: 0px;
     }
-    .card-section , .card-content{
+    .card-section ,.card-content{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-top: 50px;
-    width: 1140px; 
-    height: 1000;
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+    margin-left: 0px;
     }
-    
+    .badge-parent{
+        flex-direction: column;
+    }
+    .badge-pic{
+        display: none;
+    }
+    .badge-des{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+    .badge-title{
+        font-size: 1.75rem;
+    font-weight: bold;
+    color: rgb(9, 4, 0);
+    }
 }   
 
 
