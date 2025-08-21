@@ -15,8 +15,8 @@
 .nav-color{
     color: rgba(137, 135, 161, 1);
 }
- .nav-bar,.banner-parent , .card-section , .badge-parent{ 
-     max-width: 1140px;
+ .nav-bar,.banner-parent , .card-section , .badge-parent , .latest{ 
+ max-width: 1140px;
     margin: 0 auto; 
  } 
 .color-1{
@@ -125,7 +125,73 @@ margin-top: 20px;
     font-weight: bold;
     color: rgb(9, 4, 0);  
 }
+/* latest section */
+.latest-title{
+font-weight: bold;
+font-size: 3.25rem;
+color:rgba(233, 90, 8, 1); 
+text-align: center;
+}
+.latest-des{
+    text-align: center;
+    margin-top: 16px;
 
+}
+.pic-1{
+ background-image: url('../image/deal-ana.png');
+  width: 367px;
+ height: 200px;
+ border-radius: 8px;
+ filter: brightness(80%);
+}
+.pic-2{
+    width: 367px;
+   height: 200px;
+   background-image: url('../image/deal-bloom.png');
+   border-radius: 8px;
+   filter: brightness(80%);
+}
+.pic-3{
+    width: 753px;
+    height: 423px;
+    background-image: url('../image/deal-zabo.png');
+    border-radius: 8px;
+    margin-top: 30px;
+    filter: brightness(80%);
+}
+
+.pic-1-des , .pic-2-des{
+font-size: 1.25rem;
+color: white;
+font-weight: bold;
+text-align: center;
+justify-content: center;
+align-items: center;
+ padding: 60px 47px 0px 49px; 
+}
+.shop-1 ,.shop-2, .shop-3{
+    font-weight:500;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: underline;
+}
+.pic-3-des{
+font-size: 3rem;
+color: white;
+font-weight: bold;
+text-align: center;
+justify-content: center;
+align-items: center;
+ padding: 65px 47px 0px 49px;
+}
+.latest-pic{
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
 
 /* responsive for small device */
 @media screen and (max-width:576px){
@@ -184,6 +250,19 @@ margin-top: 20px;
     font-weight: bold;
     color: rgb(9, 4, 0);
     }
-}   
-
-
+    .latest-pic{
+    display:grid ;
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+} 
+.pic-3{
+    width: 100%;
+    
+}  
+.nav-bar,.banner-parent,
+.card-section ,
+ .badge-parent ,
+  .latest ,.latest-pic{
+width: 100%;
+}
+}
